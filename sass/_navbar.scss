@@ -1,0 +1,132 @@
+@import "_variables";
+.navbar
+{
+    z-index:55;
+    color:$white;
+    scroll-behavior: smooth;
+    
+    .container
+    {
+        .logo 
+        {
+            font-size:35px;
+            font-weight:bold;
+            letter-spacing: 4px;
+            position: relative;
+            transition:all .4s ease-in-out;
+            opacity:0;
+            &:after 
+            {
+                content:'architecture';
+                position: absolute;
+                font-size: 8px;
+                text-transform: uppercase;
+                top: 42px;
+                left: 3px;
+                opacity: 0.5;
+                letter-spacing: 5px;
+
+            }
+            &.appear
+            {
+                opacity:1;
+            }
+            &.hide 
+            {
+                opacity:0;
+            }
+        }
+       
+        ul 
+        {
+            position: relative;
+            overflow: hidden;
+            display:flex;
+            list-style-type: none;
+            margin:auto;
+            -moz-tanstion:margin 5s ease-in-out;
+            transition: all .4s ease-in-out;
+display:none;            
+            &.appear
+            {
+display:flex;            }
+            &.hide 
+            {
+                opacity:0;
+            }
+            li 
+            {
+                margin:10px;
+                padding:5px;
+                text-transform: capitalize;
+                flex:1;
+                font-size:20px;
+                a
+                {
+                    color:$white;
+                    text-decoration:none;
+                    
+
+                }
+            }
+        }
+        .nav-icon 
+        {
+            display:flex;
+            flex-direction: column;
+            cursor:pointer;
+            position:fixed;
+            right:100px;
+            top:35px;
+            transition:all .3s ease-in-out;
+            z-index:5555;
+            @media only screen and (max-width:768px)
+            {
+                right:20px;
+            }
+            @media only screen and (max-width:414px)
+            {
+                right:0;
+            }
+            @media only screen and (max-width:375px)
+            {
+                right:35px;
+                top:50px;
+            }
+           &.dark-bg 
+           {
+               background-color:black;
+               padding:10px;
+            border-radius:10px;
+
+           }
+            &.xicon .middle-dash
+            {
+                display:none;
+            }
+            &.xicon .first-dash
+            {
+                transform:rotate(45deg);
+            }
+            &.xicon .last-dash
+            {
+                transform:rotate(-45deg);
+            }
+            span
+            {
+
+                display:inline-block;
+                width:35px;
+                height:3px;
+                background-color:$white;
+                margin-bottom:3px;
+                border-radius:4px;
+                margin-right:4px;
+                &.middle-dash
+                {
+                    margin-left:10px;
+                }
+            }
+        }
+    }
+}

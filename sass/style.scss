@@ -1,0 +1,22 @@
+@import "_variables";
+@import "_buttons";
+@import "_preload";
+@import "_navbar";
+@import "_sideBar";
+@import "_header";
+@import "_about";
+@import "_services";
+@import "_work";
+@import "_best";
+@import "_team";
+@import "_video";
+@import "_blog";
+@import "_footer";
+
+body 
+{
+    overflow:hidden;
+    overflow-y: scroll;
+    scroll-behavior: 'smooth';
+    scroll-snap-align:center;
+}

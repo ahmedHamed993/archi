@@ -1,0 +1,82 @@
+@import "_variables";
+.work
+{
+    position: relative;
+    z-index:15;
+    .container 
+    {
+        h6 
+        {
+            text-align:center;
+            font-size:30px;
+            text-transform:uppercase;
+            position:relative;
+            font-family:teko;
+            &::before
+            {
+                content:'';
+                position: absolute;
+                top:15px;
+                left:405px;
+                width:50px;
+                height:3px;
+                background-color: $black;
+                @media only screen and (max-width:768px)
+                {
+                    left:190px;
+                }
+                @media only screen and (max-width:414px)
+                {
+                    display:none;
+                }
+            }
+        }
+        h3 
+        {
+            font-family: teko;
+            font-size:60px;
+            font-weight:bold;
+            text-align:center;
+        }
+        .row
+        {
+            .work-place
+            {
+                position:relative;
+                overflow:hidden;
+                height:500px;
+                &:hover .img-info
+                {
+                    bottom:40px;
+                }
+                @media only screen and (max-width:414px)
+                {
+                    padding-right:0;
+                    margin-right:15px;
+                }
+                .img-info
+                {
+                    position: absolute;
+                    left:15px;
+                    bottom:0;
+                    background-color:white;
+                    transition: .4s ease-in-out;
+                    padding:25px;
+                    width:100%;
+
+                    h4 
+                    {
+                        font-family: teko;
+                        font-size:30px;
+                        margin-bottom:0;
+
+                    }
+                    p
+                    {
+                        color:$pragraphColor;
+                    }
+                }
+            }
+        }
+    }
+}

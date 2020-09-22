@@ -1,0 +1,80 @@
+@import "_variables";
+.footer 
+{
+    background:url("../images/footer_bg.jpg");
+    background-attachment: fixed;
+    padding:100px 0;
+    color:$white;
+    @media only screen and (max-width:768px)
+    {
+     background-size:cover;   
+    }
+    .container 
+    {
+        .row 
+        {
+            .footer-info 
+            {
+                h4 
+                {
+                    font-family:serif;
+                    letter-spacing:4px;
+                    font-size:40px;
+                    position:relative;
+                    &:before 
+                    {
+                        content: 'architecture';
+                        position: absolute;
+                        bottom: -5px;
+                        left: 11px;
+                        color:$lightGray;
+                        font-size: 15px;
+                        opacity: .6;
+                    }
+                }
+                p 
+                {
+                    color:$lightGray;
+                    margin-top:25px;
+                    opacity:.8;
+                }   
+            }
+            .footer-links 
+            {
+                padding-left:25px;
+                h3 
+                {
+                    text-transform: capitalize;
+                    padding-left:10px;
+                    font-size:20px;
+                    margin-bottom:15px;
+
+                }
+                ul 
+                {
+                    list-style-type: none;
+                    color:$lightGray;
+                    padding:0;
+                    li 
+                    {
+                        margin-bottom:10px;
+                        a 
+                        {
+                            color:$lightGray;
+                            text-decoration:none;
+                            opacity:.8;
+                            display:block;
+                            transition:all .3s ease-in-out;
+                            text-transform:capitalize;
+                            &:hover  
+                            {
+                                transform:translateX(15px);
+                                opacity:1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

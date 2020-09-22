@@ -1,0 +1,61 @@
+@import "_variables";
+.side-bar 
+{
+    width:200px;
+    position: fixed;
+    top:65px;
+    right:0;
+    background-color:$darkGray;
+    color:$white;
+    overflow: hidden;
+    display:none;
+    z-index:55;
+    scroll-behavior: 'smooth';
+    &.appear
+    {
+       display:block;
+    }
+    &.hide 
+    {
+       display:none;
+    }
+    .logo-container
+    {
+        font-size:35px;
+        text-align:center;
+        padding:20px 0 10px 0;
+        font-weight:bold;
+        position:relative;
+        &:before 
+        {
+            content:"architenture";
+            position: absolute;
+            top:61px;
+            left:41px;
+            font-size:8px;
+            opacity:.8;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+        }
+    }
+    ul 
+    {
+        list-style-type: none;
+        font-size:20px;
+        padding:0 55px;
+        li 
+        {
+            padding:10px;
+            cursor:pointer;
+            a 
+            {
+                text-decoration:none;
+                color:white;
+            }
+            &:hover 
+            {
+                border-bottom:1px solid $orange;
+            }
+        }
+    }
+}

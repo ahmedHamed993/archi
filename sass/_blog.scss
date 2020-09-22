@@ -1,0 +1,154 @@
+@import "_variables";
+.blog 
+{
+    margin-top:80px;
+    margin-bottom:80px;
+
+
+    .container 
+    {
+        .blog-head 
+        {
+            h6 
+            {
+                text-align:center;
+                font-size:30px;
+                text-transform:capitalize;
+                position:relative;
+                &:before 
+                {
+                    content: '';
+                    position: absolute;
+                    top: 19px;
+                    left: 450px;
+                    width: 40px;
+                    height: 3px;
+                    background-color: black;
+                    @media only screen and (max-width:768px)
+                    {
+                        left:230px;
+                    }
+                    @media only screen and (max-width:414px)
+                    {
+                        left:55px !important;
+                    }
+                }
+            }
+            h2 
+            {
+                text-align:center;
+                font-weight:bold;
+                font-size:60px;
+                font-family:teko;
+                text-transform:uppercase;
+            }
+        }
+        .row 
+        {
+            .blog-info 
+            {
+                @media only screen and (max-width:414px)
+                {
+                    margin-bottom:20px;
+                }
+                &:hover .img-date-img img
+                {
+                    transform:scale(1.1,1.1);
+                }
+                &:hover  .img-info 
+                {
+                    border-right: 1px solid $orange;
+                    border-bottom: 1px solid $orange;
+                    border-left: 1px solid $orange;  
+                }
+                .img-date 
+                {
+                    position:relative;
+                    .img-date-img
+                    {
+                        overflow:hidden;
+                        img 
+                        {
+                            transition:transform .3s ease-in-out;
+                        }
+                    }
+                    .img-date-date 
+                    {
+                        position: absolute;
+                        bottom:0;
+                        left:0;
+                        background-color:$orange;
+                        padding:20px 30px;
+                        color:$white;
+                        text-align:center;
+                        h6 
+                        {
+                            font-size:25px;
+                            font-weight:bold;
+                        }
+                    }
+
+                }
+                .img-info 
+                {
+                    padding:20px 25px;
+                    border-right: 1px solid #f0efef;
+                    border-bottom: 1px solid #f0efef;
+                    border-left: 1px solid #f0efef;
+                    transition:all .4s ease-in-out;
+                    h6 
+                    {
+                        font-size: 15px;
+                        position: relative;
+                        color: $pragraphColor;
+                        margin-left: 25px;
+                        padding-top: 6px;
+                        &:before 
+                        {
+                            content: '';
+                            position: absolute;
+                            width: 2px;
+                            height: 33px;
+                            top: 2px;
+                            left: -10px;
+                            background-color: $pragraphColor
+                            
+                        }
+                        
+                    }
+                    h3 
+                    {
+                        font-size:30px;
+                        font-weight:bold;
+                        text-transform:uppercase;
+                        margin:30px 0;
+                        transition:color .3s ease-in-out;
+                        cursor:pointer;
+                        &:hover 
+                        {
+                            color:$orange;
+                        }
+                    }
+                    a 
+                    {
+                        color:$black;
+                        text-transform: uppercase;
+                        font-size:15px;
+                        text-decoration: none;
+                        transition:color .3s ease-in-out;
+                        i 
+                        {
+                            font-size:15px;
+                        }
+                        &:hover 
+                        {
+                            color:$blue;
+                        }
+                    }
+                }
+
+
+            }
+        }
+    }
+}

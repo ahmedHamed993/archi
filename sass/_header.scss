@@ -1,0 +1,213 @@
+@import "_variables";
+.owl-carousel
+{
+    position: relative;
+    top:-77px;
+    left:0;
+    .owl-nav 
+    {
+        display:none;
+    }
+    .owl-item 
+    {
+        width:768px;
+    }
+    .owl-dots
+    {
+        position: absolute;
+        right:40px;
+        bottom:20px;
+        .owl-dot 
+        {
+            &.active span
+            {
+                background:none;
+                
+            }
+            &.active span:before 
+            {
+                font-weight:bold;
+                font-size:30px;
+                bottom:5px;
+            }
+            &:hover span
+            {
+                background:none;
+                
+            }
+            &:nth-child(2)
+            {
+                span:before
+                {
+                    content:'02';
+                }
+            }
+            &:nth-child(3)
+            {
+                span:before
+                {
+                    content:'03';
+                }
+            }
+            span 
+            {
+                background-color: #333;
+                -webkit-border-radius: 30px;
+                -moz-border-radius: 30px;
+                border-radius: 30px;
+                display: block;
+                height: 12px;
+                margin: 5px 7px;
+                width: 12px;
+                background:none ;
+                position: relative;
+                transition:all .3s ease-in-out;
+                &:before 
+                {
+                    content:'01';
+                    width:25px;
+                    height:25px;
+                    position: absolute;
+                    color:$white;
+                    font-size:20px;
+                    opacity:1;
+                    font-family:teko;
+                    
+                }
+               
+
+            }
+           
+        }
+    }
+    .item
+    {
+        height:660px;
+        padding-top:150px;
+        @media only screen and (max-width:768px)
+        {
+            padding-top:100px;
+        }
+        
+        .container
+        {
+            h6 
+            {
+                font-family:teko;
+            }
+            .heading-one
+            {
+                font-size:70px;
+                font-family:teko;
+                font-weight: bold;
+                color:$white;
+            }
+            .slogan 
+            {
+                color:$white;
+                font-family:indieFlower;
+                font-size:20px;
+
+            }
+            .main-orange-btn 
+            {
+                margin-top:20px;
+            }
+        }
+        &.first-item
+        {
+            background:url("../images/one.jpg") no-repeat ;
+            background-size: 100%;
+            @media only screen and (max-width:768px)
+            {
+                background-size:125%;
+                height:505px;
+            }
+            @media only screen and (max-width:414px)
+            {
+                background-size:223%;
+            
+            }
+            @media only screen and (max-width:375px)
+            {
+                background-size:235%;
+            }
+            @media only screen and (max-width:360px)
+            {
+                background-size:300%;
+                height:610px;
+            }
+        }
+        &.sec-item
+        {
+            background:url("../images/two.jpg") no-repeat;
+            background-size: 100%;
+            @media only screen and (max-width:768px)
+            {
+                background-size:123%;
+                height:505px;
+            }
+            @media only screen and (max-width:414px)
+            {
+                background-size:223%;
+            
+            }
+            @media only screen and (max-width:375px)
+            {
+                background-size:235%;
+            }
+            @media only screen and (max-width:360px)
+            {
+                background-size:300%;
+                height:610px;
+            }
+            .container
+            {
+                .heading-one
+                {
+                    color:$white;
+                }
+            }
+        }
+        &.third-item
+        {
+            background:url("../images/three.jpg") no-repeat;
+            background-size: 100%;
+
+            @media only screen and (max-width:768px)
+            {
+                background-size:123%;
+                height:505px;
+            }
+            @media only screen and (max-width:414px)
+            {
+                background-size:223%;
+            
+            }
+            @media only screen and (max-width:375px)
+            {
+                background-size:245%;
+            }
+            @media only screen and (max-width:360px)
+            {
+                background-size:300%;
+                height:610px;
+            }
+            .container
+            {
+                h6 
+                {
+                    color:$white;
+                }
+                .heading-one
+                {
+                    color:$white;
+                
+                }
+            }    
+        }
+    }
+
+    
+   
+}

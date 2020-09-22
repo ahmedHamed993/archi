@@ -1,0 +1,65 @@
+@import "_variables";
+.best 
+{
+    background:url("../images/bg02.jpg") no-repeat;
+    background-size: 100%;
+    height:800px;
+    position: relative;
+    top:-155px;
+    @media only screen and (max-width:768px)
+    {
+        background-size:180%;
+    }
+    @media only screen and (max-width:414px)
+    {
+        background-size:290%;
+    }
+    @media only screen andjhhn (max-width:375px)
+    {
+        width:375px;
+    }
+    @media only screen and (max-width:375px)
+    {
+        width:355px;
+        background-size:340%;
+    }
+    .best-info
+    {
+        background-color:rgba(0,0,0,.6);
+        position: absolute;
+        left:0;
+        bottom:0;
+        width:600px;
+        padding:50px;
+        z-index:15;
+        @media only screen and (max-width:375px)
+        {
+            padding-right:235px;
+        }
+        @media only screen and (max-width:414px)
+        {
+            width:400px;
+        }
+        @media only screen and (max-width:375px)
+        {
+            width:350px;
+            padding:20px;
+        }
+        h3 
+        {
+            font-family:teko;
+            color:white;
+            font-size:50px;
+            margin-bottom:50px;
+        }
+        p 
+        {
+            color:rgb(179, 179, 179);
+            margin-bottom:25px;
+        }
+       .main-orange-btn 
+       {
+           margin-top:50px;
+       }
+    }
+}

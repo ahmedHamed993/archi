@@ -1,0 +1,88 @@
+@import "_variables";
+.video 
+{
+    max-width:100%;
+
+    .row 
+    {
+        margin-right:0;
+        .video-icon 
+        {
+            background:url("../images/bike.jpg");
+            height:500px;
+            position:relative;
+            a 
+            {
+                i 
+                {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 60px;
+                    color: white;
+                    border: 4px solid white;
+                    padding: 20px;
+                    border-radius: 50%;
+                    padding-left: 25px;
+                }
+            }
+        }
+        .video-info 
+        {
+            background:url("../images/bg01.jpg");
+            height:500px;
+            .container 
+            {
+                .video-info-head 
+                {
+                    margin:85px 0 50px 170px;
+                    @media only screen and (max-width:768px)
+                    {
+                        margin-left:200px;   
+                    }
+                    @media only screen and (max-width:414px)
+                    {
+                        margin-left:58px;
+                    }
+                    img 
+                    {
+                        height:100px;
+                        width:100px;
+                        border-radius:50%;
+                        display:inline-block;
+                    }
+                    h6 
+                    {
+                        color:$orange;
+                        display:inline-block;
+                        position:relative;
+                        font-size:25px;
+                        text-transform:capitalize;
+                        &:before 
+                        {
+                            content:'designer';
+                            color:$pragraphColor;
+                            font-size:15px;
+                            position: absolute;
+                            left:40px;
+                            bottom:-20px;
+
+                        }
+                    }
+                }
+                p 
+                {
+                    color:$white;
+                    font-size:20px;
+                    padding:0 80px;
+                    @media only screen and (max-width:414px)
+                    {
+                        padding:0;
+                        padding-left:13px;
+                    }
+                }
+            }
+        }
+    }
+}
